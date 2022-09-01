@@ -50,6 +50,7 @@ main{
 
 /*Estilo menu hamburguer criando as barrinhas e deixando o mouse pointer*/
 .mobile-menu{
+    display: none;/* esconder para mostrar apenas quando for necessario*/
     cursor: pointer;
 }
 .mobile-menu div {
@@ -57,4 +58,35 @@ main{
     height: 2px;
     background: #fff;
     margin: 8px;
+}
+
+/*definindo em qual tamanho da pagina será exibido o icone do menu hamburguer*/
+
+@media (max-Width: 999px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #23232e;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+    }
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu{
+        display: block;
+    }
+}
+
+.nav-list.active{
+    transform: translateX(0);
 }

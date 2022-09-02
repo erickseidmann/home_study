@@ -87,6 +87,6 @@ main{
     }
 }
 
-.nav-list.active{
+.nav-list.active {
     transform: translateX(0);
 }

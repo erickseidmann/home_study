@@ -10,6 +10,7 @@ class MobileNavbar{
     }
     handleClick() {
         this.navList.classList.toggle(this.activeClass);
+        this.animateLinks();/* animação para cada click*/
       }
     
       addClickEvent() {

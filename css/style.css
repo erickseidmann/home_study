@@ -77,6 +77,7 @@ main{
         align-items: center;
         justify-content: space-around;
         transform: translateX(100%);
+        transition: transform 0.3s ease-in; /*melhorando a animação de transição*/
     }
     .nav-list li{
         margin-left: 0;
@@ -89,4 +90,17 @@ main{
 
 .nav-list.active {
     transform: translateX(0);
+}
+
+/* opacidade dos links*/
+
+@keyframes navLinkFade {
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

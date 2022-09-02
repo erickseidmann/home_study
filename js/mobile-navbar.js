@@ -11,16 +11,19 @@ class MobileNavbar{
 
     /*animação*/
     animateLinks() {
-        this.navLinks.forEach((link) => {
-            link.style.animation
-            ?(link.style.animation="")
-            :(link.style.animation= `navLinkFade 0.5s ease forwards 0.3s`);
+        this.navLinks.forEach((link, index) => {
+          link.style.animation
+            ? (link.style.animation = "")
+            : (link.style.animation = `navLinkFade 0.5s ease forwards ${
+                index / 7 + 0.3
+              }s`);
         });
-    }
-
-    handleClick() {
+      }
+    
+      handleClick() {
         this.navList.classList.toggle(this.activeClass);
-        this.animateLinks();/* animação para cada click*/
+        this.mobileMenu.classList.toggle(this.activeClass);
+        this.animateLinks();
       }
     
       addClickEvent() {

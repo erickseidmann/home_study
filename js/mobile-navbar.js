@@ -9,6 +9,7 @@ class MobileNavbar {
       this.handleClick = this.handleClick.bind(this);
     }
   
+    /*animação*/
     animateLinks() {
       this.navLinks.forEach((link, index) => {
         link.style.animation

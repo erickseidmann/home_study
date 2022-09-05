@@ -33,7 +33,7 @@ nav {
 }
 
 main{
-   background: url("/imgs/eberhard-grossgasteiger-FGvPSWXD6RQ-unsplash.jpg") no-repeat center center;/* posicionamento referente ao eixo*/ 
+   background: url("/imgs/jonny-gios-YvhQEw-FPrU-unsplash.jpg") no-repeat center center;/* posicionamento referente ao eixo*/ 
    background-size: cover;/* caso a resolução do monitor seja maior do que a imagem*/
    height: 92vh;
 }
